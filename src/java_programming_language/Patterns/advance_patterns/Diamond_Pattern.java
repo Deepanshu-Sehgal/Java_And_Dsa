@@ -22,6 +22,6 @@ public class Diamond_Pattern {
         }
     }
     public static void main(String[] args) {
-        diamond(4);
+        diamond(10);
     }
 }
