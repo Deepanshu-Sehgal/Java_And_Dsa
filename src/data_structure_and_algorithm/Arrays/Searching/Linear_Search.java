@@ -12,7 +12,7 @@ public class Linear_Search {
 
     public static void main(String[] args) {
         int[] num = {2, 3, 5, 6, 12, 34, 56, 76, 87, 89, 100};
-        int key = 33;
+        int key = 34;
 
         int index = search(num, key);
         if (index == -1)
