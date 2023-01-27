@@ -9,7 +9,7 @@ public class Input_Output {
         Scanner sc = new Scanner(System.in);
 
         //array input
-       /* marks[0] = sc.nextInt();
+        marks[0] = sc.nextInt();
         marks[1] = sc.nextInt();
         marks[2] = sc.nextInt();
 
@@ -23,7 +23,7 @@ public class Input_Output {
         System.out.println("maths : " + marks[2]);
 
         int percentage = (marks[0] + marks[1] + marks[2]) / 3;
-        System.out.println("Percentage : " + percentage + "%");*/
+        System.out.println("Percentage : " + percentage + "%");
 
         //length of an array
         System.out.println("length of an array" + marks.length);
