@@ -1,4 +1,4 @@
-package java_programming_language.Arrays;
+package data_structure_and_algorithm.Arrays;
 
 public class Array_as_Function_Argument {
     public static void update(int[] marks) {

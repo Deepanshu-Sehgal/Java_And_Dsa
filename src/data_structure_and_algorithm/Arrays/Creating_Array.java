@@ -1,4 +1,4 @@
-package java_programming_language.Arrays;
+package data_structure_and_algorithm.Arrays;
 
 public class Creating_Array {
     public static void main(String[] args) {
