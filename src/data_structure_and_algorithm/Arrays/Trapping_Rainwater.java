@@ -1,5 +1,8 @@
 package data_structure_and_algorithm.Arrays;
 
+/*
+Time complexity = O(n)
+*/
 public class Trapping_Rainwater {
     public static int trappedRainWater(int[] height) {
         int n = height.length;
