@@ -1,5 +1,12 @@
 package data_structure_and_algorithm.Sorting;
 
+/*
+if not sorted
+time complexity = O(n raise to the power 2)
+
+if already sorted
+time complexity = O(n)
+*/
 public class Bubble_Sort {
 
     //perform the bubble sort
@@ -42,7 +49,7 @@ public class Bubble_Sort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5};
+        int[] arr = {5,4,1,3,2};
         printArr("Before", arr);
         bubbleSort(arr);
         printArr("After", arr);
