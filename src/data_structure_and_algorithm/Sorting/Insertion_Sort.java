@@ -2,16 +2,17 @@ package data_structure_and_algorithm.Sorting;
 
 public class Insertion_Sort {
     public static void insertionSort(int[] arr) {
-        for (int i = 1; i < arr.length; i++) {
-            int curr = arr[i];
-            int prev = i - 1;
+        for (int i = 1; i < arr.length; i++) { //start from index 1 to divide array in sorted and unsorted part 0th index is a sorted part nd rest is unsorted
+            int temp = arr[i]; //storing 1st index element as temp
+            int prev = i - 1; // storing 0th index
+
             //finding out the correct position to insert
-            while (prev >= 0 && arr[prev] > curr) {
+            while (prev >= 0 && arr[prev] > temp) { //comparing 0th element with 1st element weather it is small or greater if previous element is > temp then shift the 1st element to the right
                 arr[prev + 1] = arr[prev];
                 prev--;
             }
             //insertion
-            arr[prev+1] = curr;
+            arr[prev+1] = temp;
         }
     }
 
