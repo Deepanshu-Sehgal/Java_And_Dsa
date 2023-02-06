@@ -20,18 +20,24 @@ public class Spiral_matrix {
             }
 
             //right
-            for (int i = startRow + 1; i < endRow; i++) {
+            for (int i = startRow + 1; i <= endRow; i++) {
                 System.out.print(matrix[i][endCol] + " ");
             }
 
             //bottom
             for (int i = endCol - 1; i >= startCol; i--) {
-                System.out.print(matrix[endRow][i]);
+                if (startRow == endRow){
+                    break;
+                }
+                System.out.print(matrix[endRow][i]+ " ");
             }
 
             //left
-            for (int i = endCol - 1; i >= startRow + 1; i--) {
-                System.out.print(matrix[i][startCol]);
+            for (int i = endRow - 1; i >= startRow + 1; i--) {
+                if (startCol == endCol){
+                    break;
+                }
+                System.out.print(matrix[i][startCol]+ " ");
             }
 
             startCol++;
@@ -50,8 +56,6 @@ public class Spiral_matrix {
                 {9, 10, 11, 12},
                 {13, 14, 15, 16}
         };
-
         printSpiral(matrix);
-
     }
 }
