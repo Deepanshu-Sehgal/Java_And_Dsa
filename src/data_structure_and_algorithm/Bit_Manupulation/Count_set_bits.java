@@ -1,5 +1,5 @@
 package data_structure_and_algorithm.Bit_Manupulation;
-
+//google amazon
 public class Count_set_bits {
     public static int countSetBits(int n) {
         int count = 0;
