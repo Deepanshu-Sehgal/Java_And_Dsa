@@ -1,4 +1,4 @@
-package Object_oriented_programming.Objects_and_Classes;
+package Object_oriented_programming.Encapsulation;
 
 public class OOPS {
     public static void main(String[] args) {

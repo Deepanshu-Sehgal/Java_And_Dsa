@@ -1,4 +1,4 @@
-package Object_oriented_programming.Objects_and_Classes;
+package Object_oriented_programming.Encapsulation;
 
 public class Access_modifier {
     public static void main(String[] args) {
