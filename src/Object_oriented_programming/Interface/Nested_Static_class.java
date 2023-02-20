@@ -16,6 +16,10 @@ class Student {
     String roll;
     static String schoolName;
 
+    static int returnPercentage(int math, int phy, int chem) {
+        return (math + phy + chem) / 3;
+    }
+
     String getName() {
         return this.name;
     }
@@ -24,7 +28,7 @@ class Student {
         this.name = name;
     }
 
-    class Name{
+    static class Name {
 
     }
 }
