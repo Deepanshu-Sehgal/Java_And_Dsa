@@ -1,5 +1,6 @@
 package data_structure_and_algorithm.Recursion;
 
+//time and space complexity = O(n)
 public class Fact_of_n {
     public static void main(String[] args) {
         System.out.println(factorial(5));
