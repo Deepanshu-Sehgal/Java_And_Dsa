@@ -1,6 +1,6 @@
 package data_structure_and_algorithm.Recursion;
 
-public class SUm_of_natural_num {
+public class Sum_of_natural_num {
     public static void main(String[] args) {
         System.out.println(calSum(5));
 
