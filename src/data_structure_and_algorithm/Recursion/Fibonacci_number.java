@@ -1,5 +1,6 @@
 package data_structure_and_algorithm.Recursion;
 
+//space complexity = O(n) and time complixity = O(n^2)
 public class Fibonacci_number {
     public static void main(String[] args) {
         System.out.println(printFibo(5));
