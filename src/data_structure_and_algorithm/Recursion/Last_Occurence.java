@@ -7,7 +7,7 @@ public class Last_Occurence {
         }
 
     public static int LastOccurence ( int[] arr, int key, int i){
-        if (i == arr.length)
+        if (i == arr.length) //base case
             return -1;
 
         int isFound = LastOccurence(arr, key, i + 1);
