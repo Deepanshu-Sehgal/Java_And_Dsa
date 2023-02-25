@@ -8,11 +8,10 @@ public class Duplicate_Strings {
     }
 
     public static void removeDuplicate(String str, int index, StringBuilder newStr, boolean map[]) {
-        if (index == str.length()) {
+        if (index == str.length()) { //base case
             System.out.println(newStr);
             return;
         }
-
         //kaam
         char currChar = str.charAt(index);
         if (map[currChar - 'a'] == true) {
