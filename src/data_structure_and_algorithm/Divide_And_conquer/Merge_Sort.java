@@ -46,13 +46,12 @@ public class Merge_Sort {
             temp[k++] = arr[i++];
         }
 
-        //rest element in right array
-        //right part
+        /* Copy remaining elements of Left[] if any */
         while (j <= ei) {
             temp[k++] = arr[j++];
         }
 
-        //copy temp to original arr
+        /* Copy remaining elements of Right[] if any */
         for (k = 0, i = si; k < temp.length; k++, i++) {
             arr[i] = temp[k];
         }
