@@ -1,5 +1,9 @@
 package data_structure_and_algorithm.Divide_And_conquer;
 
+/*
+time complexity  = O(o log n)
+space complexity = O(n)
+*/
 public class Merge_Sort {
     public static void main(String[] args) {
         int[] arr = {6, 3, 9, 5, 2, 8};
@@ -9,7 +13,7 @@ public class Merge_Sort {
 
     public static void mergeSort(int[] arr, int si, int ei) {
 
-        if (si >= ei) {
+        if (si >= ei) { // base case
             return;
         }
 
