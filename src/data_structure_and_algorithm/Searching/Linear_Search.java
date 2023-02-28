@@ -1,4 +1,4 @@
-package data_structure_and_algorithm.Arrays.Searching;
+package data_structure_and_algorithm.Searching;
 
 public class Linear_Search {
     public static int search(int[] number, int key) {

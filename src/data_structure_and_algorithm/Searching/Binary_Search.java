@@ -1,4 +1,4 @@
-package data_structure_and_algorithm.Arrays.Searching;
+package data_structure_and_algorithm.Searching;
 
 public class Binary_Search {
     public static int binary_Search(int[] numbers, int key) {

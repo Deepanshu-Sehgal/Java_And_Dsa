@@ -1,4 +1,4 @@
-package data_structure_and_algorithm.Arrays.Searching;
+package data_structure_and_algorithm.Searching;
 
 public class Smallest_Number {
     public static int get_smallest(int[] number) {
