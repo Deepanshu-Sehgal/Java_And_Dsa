@@ -1,5 +1,10 @@
 package data_structure_and_algorithm.Divide_And_conquer;
 
+/*
+question/input = sorted, rotated array with the distinct numbers(in ascending order)
+it is rotated at a pivot point. find the index of given element
+*/
+
 public class Search_in_rotated_sorted_Array {
     public static void main(String[] args) {
         int[] arr = {4, 5, 6, 7, 0, 1, 2};
