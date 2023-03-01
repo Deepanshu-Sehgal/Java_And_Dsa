@@ -2,7 +2,7 @@ package data_structure_and_algorithm.Sorting;
 
 /*
 if not sorted
-time complexity = O(n raise to the power 2)
+time complexity = O(n^2)
 
 if already sorted
 time complexity = O(n)
