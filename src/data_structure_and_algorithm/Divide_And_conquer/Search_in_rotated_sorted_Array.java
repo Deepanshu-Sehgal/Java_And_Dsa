@@ -20,7 +20,6 @@ public class Search_in_rotated_sorted_Array {
             return -1;
         }
 
-
         //kaam
         int mid = si + (ei - si) / 2;
 
@@ -28,11 +27,10 @@ public class Search_in_rotated_sorted_Array {
         if (arr[mid] == target) {
             return mid;
         }
-
         //mid-on line 1
         if (arr[si] <= arr[mid]) {
             //case a:left
-            if (arr[si] <= target && target <= arr[ei]) {
+            if (arr[si] <= target && target <= arr[mid]) {
                 return search(arr, target, si, mid - 1);
             }
 
@@ -44,7 +42,7 @@ public class Search_in_rotated_sorted_Array {
         }
 
         //mid line 2
-        else {
+        else { //arr[mid] <= arr[ei]
             //case c: right
             if (arr[mid] <= target && target <= arr[ei]) {
                 return search(arr, target, mid + 1, ei);
