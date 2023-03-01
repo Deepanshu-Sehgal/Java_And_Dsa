@@ -1,5 +1,8 @@
 package data_structure_and_algorithm.Divide_And_conquer;
 
+//time complexity in best case = O(n log n)
+// and in worst case O(n^2)
+// and space complexity = O(1)
 public class Quick_Sort {
     public static void main(String[] args) {
 
