@@ -2,10 +2,10 @@ package data_structure_and_algorithm.Sorting;
 
 /*
 if not sorted
-time complexity = O(n^2)
+time complexity worst case= O(n^2)
 
 if already sorted
-time complexity = O(n)
+time complexity best case = O(n)
 */
 public class Bubble_Sort {
 
