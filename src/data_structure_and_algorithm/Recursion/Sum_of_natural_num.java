@@ -11,7 +11,6 @@ public class Sum_of_natural_num {
             return 1;
         }
         int snm1 = calSum(n-1);
-        int Sn = n + snm1;
-        return Sn;
+        return n + snm1;
     }
 }
