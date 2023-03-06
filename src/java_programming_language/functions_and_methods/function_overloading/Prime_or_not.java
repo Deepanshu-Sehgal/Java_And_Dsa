@@ -3,7 +3,8 @@ package java_programming_language.functions_and_methods.function_overloading;
 public class Prime_or_not {
 
     //only for n>2
-   /* public static boolean isPrime(int n) {
+   /*
+   public static boolean isPrime(int n) {
         //Corner cases
         if (n == 2) {
             return true;
@@ -14,7 +15,8 @@ public class Prime_or_not {
             }
         }
         return true;
-    }*/
+    }
+    */
 
     //Optimized solution
     public static boolean isPrime(int n) {
