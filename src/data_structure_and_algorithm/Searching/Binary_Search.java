@@ -1,5 +1,7 @@
 package data_structure_and_algorithm.Searching;
 
+
+//time complexity = O(log n)
 public class Binary_Search {
     public static int binary_Search(int[] numbers, int key) {
         int start = 0, end = numbers.length - 1;

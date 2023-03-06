@@ -11,7 +11,6 @@ public class Fact_of_n {
         if (n == 0)
             return 1;
 
-        int fact_of_n = n * factorial(n - 1);
-        return fact_of_n;
+        return n * factorial(n - 1);
     }
 }
