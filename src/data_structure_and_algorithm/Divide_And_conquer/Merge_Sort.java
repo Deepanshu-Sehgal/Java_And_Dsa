@@ -1,7 +1,7 @@
 package data_structure_and_algorithm.Divide_And_conquer;
 
 /*
-time complexity  = O(o log n)
+time complexity  = O(n log n)
 space complexity = O(n)
 */
 public class Merge_Sort {
@@ -12,16 +12,14 @@ public class Merge_Sort {
     }
 
     public static void mergeSort(int[] arr, int si, int ei) {
-
         if (si >= ei) { // base case
             return;
         }
-
         //kam
         int mid = si + (ei - si) / 2;
         mergeSort(arr, si, mid); //left part
         mergeSort(arr, mid + 1, ei); //right part
-        merge(arr, si, mid, ei);
+        merge(arr, si, mid, ei); //merge left and right part in array
     }
 
     public static void merge(int[] arr, int si, int mid, int ei) {
