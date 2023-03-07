@@ -16,7 +16,7 @@ public class Print_x_power_n_Oprimized {
         int halfPowerSq =  halfPower * halfPower;
 
         //power is odd
-        if (power % 2 != 0) {
+        if (power % 2 != 0) { //power is odd
             halfPowerSq = number * halfPowerSq;
         }
 
