@@ -26,3 +26,14 @@ public class Find_Subsets {
     }
 
 }
+/*
+ans :-
+
+ab
+ac
+a
+bc
+b
+c
+" "
+*/
