@@ -1,5 +1,6 @@
 package data_structure_and_algorithm.Back_Tracking;
 
+//time complexity = O(n!)
 public class NQueens {
 
     static int count;
