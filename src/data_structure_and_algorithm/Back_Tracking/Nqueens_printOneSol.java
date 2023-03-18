@@ -1,6 +1,6 @@
 package data_structure_and_algorithm.Back_Tracking;
 
-public class NQueens {
+public class Nqueens_printOneSol {
 
     static int count;
 
@@ -13,27 +13,36 @@ public class NQueens {
             }
         }
 
-        nQueens(board, 0);
+        if (nQueens(board, 0)) {
+            System.out.println("Solution is possible");
+            printBoard(board);
+        } else {
+            System.out.println("Solution is not possible");
+        }
         System.out.println("total ways to solve n queens = " + count);
     }
 
-    private static void nQueens(char[][] board, int row) {
+    private static boolean nQueens(char[][] board, int row) {
         //base case
         if (row == board.length) {
-            printBoard(board);
+            //printBoard(board);
             count++;
-            return;
+            return true;
         }
 
         //column loop
         for (int i = 0; i < board.length; i++) {
             if (isSafe(board, row, i)) {
                 board[row][i] = 'Q';
-                nQueens(board, row + 1);//function call
+
+                if (nQueens(board, row + 1)) {
+                    return true;
+                }//function call
                 board[row][i] = '.';//backtracking step
             }
 
         }
+        return false;
     }
 
     private static boolean isSafe(char[][] board, int row, int col) {
