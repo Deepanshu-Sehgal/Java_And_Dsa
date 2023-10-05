@@ -11,6 +11,7 @@ public class Abstraction {
         Chicken chicken = new Chicken();
         chicken.eat();
         chicken.walk();
+//        chicken.changeColor();
         System.out.println(chicken.color);
     }
 }
