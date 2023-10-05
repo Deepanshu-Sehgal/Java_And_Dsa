@@ -7,10 +7,6 @@ public class InsertionArray {
         int positionToInsert = 2;
 
         // Check if the position is valid
-        if (positionToInsert < 0 || positionToInsert > originalArray.length) {
-            System.out.println("Invalid position");
-            return;
-        }
 
         // Create a new array with one more element
         int[] newArray = new int[originalArray.length + 1];
@@ -25,9 +21,6 @@ public class InsertionArray {
         }
 
         // If the position is at the end, insert the element at the end
-        if (positionToInsert == originalArray.length) {
-            newArray[newArray.length - 1] = elementToInsert;
-        }
 
         // Print the updated array
         System.out.print("Updated Array: ");
