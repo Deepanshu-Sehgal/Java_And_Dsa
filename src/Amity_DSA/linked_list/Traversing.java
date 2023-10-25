@@ -2,7 +2,7 @@ package Amity_DSA.linked_list;
 
 class Node {
     int data;
-    Node next;
+    AllNode next;
 
     Node(int data) {
         this.data = data;
@@ -11,7 +11,7 @@ class Node {
 }
 
 class LinkedList {
-    Node head;
+    AllNode head;
 
     LinkedList() {
         head = null;
@@ -19,21 +19,21 @@ class LinkedList {
 
     // Method to insert a new node at the end of the linked list
     public void append(int data) {
-        Node newNode = new Node(data);
+        AllNode newAllNode = new AllNode(data);
         if (head == null) {
-            head = newNode;
+            head = newAllNode;
         } else {
-            Node current = head;
+            AllNode current = head;
             while (current.next != null) {
                 current = current.next;
             }
-            current.next = newNode;
+            current.next = newAllNode;
         }
     }
 
     // Method to traverse and print the linked list
     public void traverse() {
-        Node current = head;
+        AllNode current = head;
         while (current != null) {
             System.out.print(current.data + " ");
             current = current.next;
