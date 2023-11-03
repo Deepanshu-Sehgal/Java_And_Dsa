@@ -149,31 +149,31 @@ public class AllOperations {
         list.insertAtStart(10);
         list.insertAtStart(12);
 
-        switch (a){
-            case 1:{
+        switch (a) {
+            case 1: {
                 list.insertAtStart(45);
                 list.insertAtStart(26);
                 break;
             }
-            case 2:{
+            case 2: {
                 list.insertAtEnd(3);
                 list.insertAtEnd(5);
                 break;
             }
-            case 3 :{
+            case 3: {
                 list.insertAtMiddle(2, 2);
                 list.insertAtMiddle(4, 5);
                 break;
             }
-            case 4:{
+            case 4: {
                 list.deleteFromStart();
                 break;
             }
-            case 5:{
+            case 5: {
                 list.deleteFromEnd();
                 break;
             }
-            case 6:{
+            case 6: {
                 list.deleteFromMiddle(2);
                 break;
             }

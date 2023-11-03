@@ -21,3 +21,11 @@ public class Kadane_Algorithm {
         MaxKadaneSubArray(number);
     }
 }
+/*
+traversing
+insertion
+deletion
+searching
+merging
+sorting
+*/
