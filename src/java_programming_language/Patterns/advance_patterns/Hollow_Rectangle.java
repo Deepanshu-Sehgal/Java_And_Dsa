@@ -9,7 +9,7 @@ public class Hollow_Rectangle {
                 //cell - (i,j)
                 if (i == 1 || i == totRows || j == 1 || j == totCols) {
                     //Boundary Cells
-                    System.out.print("*  ");
+                    System.out.print("*");
                 } else {
                     System.out.print(" ");
                 }
