@@ -2,7 +2,7 @@ package Amity_DSA.linked_list;
 
 class Node {
     int data;
-    AllNode next;
+    NodeInetr next;
 
     Node(int data) {
         this.data = data;

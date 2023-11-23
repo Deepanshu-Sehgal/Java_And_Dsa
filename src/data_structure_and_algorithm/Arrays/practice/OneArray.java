@@ -2,8 +2,8 @@ package data_structure_and_algorithm.Arrays.practice;
 
 public class OneArray {
     public static void main(String[] args) {
-//        int[] arr = {1,1,1,3,3,4,3,2,4,2};
-        int[] arr = {1,2,3,4};
+//      int[] arr = {1,1,1,3,3,4,3,2,4,2};
+        int[] arr = {1, 2, 3, 4};
 
         System.out.println(isTwice(arr));
     }
