@@ -45,6 +45,5 @@ public class FourArray {
             trappedWater += waterLevel - height[i];
         }
         return trappedWater;
-
     }
 }

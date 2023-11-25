@@ -14,6 +14,8 @@ public class DeletionArray {
             }
         }
         arr = newArr;
+
+
         System.out.print("Updated Array: ");
         for (int num : arr) {
             System.out.print(num + " ");
