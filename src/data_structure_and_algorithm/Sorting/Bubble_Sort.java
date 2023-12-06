@@ -19,7 +19,7 @@ public class Bubble_Sort {
             //check if swapping occurs
             swapped = false;
 
-            //loop to compare adjacent elements
+            //loop to compare adjacent(next element) elements
             for (int j = 0; j < arr.length - 1 - turn; j++) {
 
                 //compare two array elements
@@ -49,7 +49,7 @@ public class Bubble_Sort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {5,4,1,3,2};
+        int[] arr = {4,5,1,3,2};
         printArr("Before", arr);
         bubbleSort(arr);
         printArr("After", arr);

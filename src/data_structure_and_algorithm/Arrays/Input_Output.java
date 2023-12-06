@@ -27,7 +27,5 @@ public class Input_Output {
 
         //length of an array
         System.out.println("length of an array" + marks.length);
-
-
     }
 }
