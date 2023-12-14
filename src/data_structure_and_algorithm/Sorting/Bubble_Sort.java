@@ -31,7 +31,9 @@ public class Bubble_Sort {
                     arr[j + 1] = temp;
                     swapped = true;
                 }
+
             }
+            printArr(String.valueOf(turn), arr);
 
             // no swapping means the array is already sorted
             // so no need for further comparison
@@ -46,6 +48,7 @@ public class Bubble_Sort {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
+
     }
 
     public static void main(String[] args) {
