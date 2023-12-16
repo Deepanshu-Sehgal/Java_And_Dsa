@@ -14,6 +14,7 @@ public class Search_in_array {
         }
         return false;
     }
+
     public static void main(String[] args) {
         int[][] matrix = new int[3][3]; //init of 2d array
         Scanner sc = new Scanner(System.in);
@@ -35,7 +36,6 @@ public class Search_in_array {
             }
             System.out.println();
         }
-
         Search(matrix,5);
 
 
