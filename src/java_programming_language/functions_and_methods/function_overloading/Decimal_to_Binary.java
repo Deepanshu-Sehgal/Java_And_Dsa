@@ -6,15 +6,15 @@ public class Decimal_to_Binary {
         int pow = 0;
         int binNum = 0;
         while (n > 0) {
-            int rem = n % 2;
+            int rem = n % 2;//reminder
             binNum = binNum + (rem * (int) Math.pow(10, pow));
             pow++;
-            n /= 2;
+            n /= 2; //questioned
         }
         System.out.println("Binary Form of " + myNum + " = " + binNum);
     }
 
     public static void main(String[] args) {
-        decToBin(5);
+        decToBin(11);
     }
 }
