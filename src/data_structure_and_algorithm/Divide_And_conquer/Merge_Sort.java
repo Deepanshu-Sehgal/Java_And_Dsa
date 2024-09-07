@@ -28,6 +28,8 @@ public class Merge_Sort {
         int i = si; //iterator for left part
         int j = mid + 1; //iterator for right part
         int k = 0;//iterator for temp arr
+
+
         while (i <= mid && j <= ei) {
             if (arr[i] < arr[j]) {
                 temp[k] = arr[i];
@@ -39,18 +41,18 @@ public class Merge_Sort {
             k++;
         }
 
-        //rest element in left array
+        //for leftover elements of 1st sorted part
         //left part
         while (i <= mid) {
             temp[k++] = arr[i++];
         }
 
-        /* Copy remaining elements of Left[] if any */
+        //for left over elements of 1ns sorted part
         while (j <= ei) {
             temp[k++] = arr[j++];
         }
 
-        /* Copy remaining elements of Right[] if any */
+        //copy temp to original array
         for (k = 0, i = si; k < temp.length; k++, i++) {
             arr[i] = temp[k];
         }
