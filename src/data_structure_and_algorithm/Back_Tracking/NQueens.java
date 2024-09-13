@@ -59,7 +59,7 @@ public class NQueens {
         return true;
     }
 
-    private static void printBoard(char[][] board) {
+    public static void printBoard(char[][] board) {
         System.out.println("---------chess board---------");
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board.length; j++) {
