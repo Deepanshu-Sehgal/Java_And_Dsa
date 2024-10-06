@@ -82,23 +82,53 @@ public class LinkedList {
 
     }
 
-    public int removeFirst() {
+    public void removeFirst() {
         if (size == 0) {
             System.out.println("ll is empty");
-            return Integer.MIN_VALUE;
         } else if (size == 1) {
             int val = head.data;
             head = tail = null;
-            return val;
+            size = 0;
         }
-        int val = head.data;
         head = head.next;
-        return val;
+        size--;
+
+    }
+
+    public void removeLast() {
+        if (size == 0) {
+            System.out.println("ll is empty");
+        } else if (size == 1) {
+            head = tail = null;
+            size = 0;
+        }
+        //prev : i = size-2
+        Node prev = head;
+        for (int i = 0; i < size - 2; i++) {
+            prev = prev.next;
+        }
+        prev.next = null;
+        tail = prev;
+        size--;
+
+    }
+
+    public int itrSearch(int key) {
+        Node temp = head;
+        int i = 0;
+        while (temp != null) {
+            if (temp.data == key) {
+                return i; //key found
+            }
+            temp = temp.next;
+            i++;
+        }
+        return -1; // key not found
     }
 
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
-//        ll.head = new Node(1);
+        //ll.head = new Node(1);
 //        ll.head.next = new Node(2);
         ll.print();
         ll.addFirst(2);
@@ -112,5 +142,10 @@ public class LinkedList {
 //        System.out.println(ll.size);
         ll.removeFirst();
         ll.print();
+
+        ll.removeLast();
+        ll.print();
+        System.out.println(size);
+        System.out.println("element found at index :- " + ll.itrSearch(9));
     }
 }
