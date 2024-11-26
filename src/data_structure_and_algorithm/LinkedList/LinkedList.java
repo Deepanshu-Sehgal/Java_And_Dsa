@@ -141,26 +141,76 @@ public class LinkedList {
         return helper(head, key);
     }
 
+    public void reverse(){
+        Node prev = null;
+        Node curr = tail = head;
+        Node next;
+        while(curr!= null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+
+    }
+
+    public void deleteNthFromEnd(int n){
+        //calculate size
+        int size = 0;
+        Node temp = head;
+        while(temp!=null){
+            temp = temp.next;
+            size++;
+        }
+
+        if(n == size){
+            head = head.next; //remove First Operation
+            return;
+        }
+
+        //size -n
+        int i = 1;
+        int iToFind = size-n;
+        Node prev = head;
+        while (i<iToFind){
+            prev = prev.next;
+            i++;
+        }
+        prev.next = prev.next.next;
+        return;
+    }
+
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         //ll.head = new Node(1);
-//        ll.head.next = new Node(2);
-        ll.print();
+////        ll.head.next = new Node(2);
+//        ll.print();
+//        ll.addFirst(2);
+//        ll.addFirst(1);
+//        ll.print();
+//        ll.addLast(3);
+//        ll.addLast(4);
+//        ll.print();
+//        ll.add(2, 9);
+//        ll.print();
+////        System.out.println(ll.size);
+//        ll.removeFirst();
+//        ll.print();
+//
+//        ll.removeLast();
+//        ll.print();
+//        System.out.println(size);
+//        System.out.println("element found at index :- " + ll.recSearch(9));
+//        System.out.println();
+
         ll.addFirst(2);
         ll.addFirst(1);
-        ll.print();
-        ll.addLast(3);
         ll.addLast(4);
+        ll.addLast(5);
+        ll.add(2,5);
         ll.print();
-        ll.add(2, 9);
+        ll.reverse();
         ll.print();
-//        System.out.println(ll.size);
-        ll.removeFirst();
-        ll.print();
-
-        ll.removeLast();
-        ll.print();
-        System.out.println(size);
-        System.out.println("element found at index :- " + ll.recSearch(9));
     }
 }
