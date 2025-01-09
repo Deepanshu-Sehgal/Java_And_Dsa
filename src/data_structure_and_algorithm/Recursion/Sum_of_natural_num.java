@@ -6,7 +6,7 @@ public class Sum_of_natural_num {
         System.out.println(calSum(5));
 
     }
-    public static int calSum(int n){
+    static int calSum(int n){
 
         if (n==1){
             return 1;
