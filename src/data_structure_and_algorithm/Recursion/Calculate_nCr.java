@@ -2,7 +2,6 @@ package data_structure_and_algorithm.Recursion;
 
 public class Calculate_nCr {
     public static void main(String[] args) {
-
         System.out.println(nCr(5,3));
     }
 
