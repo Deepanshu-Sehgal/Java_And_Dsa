@@ -4,7 +4,7 @@ public class Josephus_Problem {
 
     //Goli marne vli game hai ye ki 5 log hai and hr 3re bande ko gun se marna hai
     public static void main(String[] args) {
-        System.out.println(josephus(5,3));
+        System.out.println(josephus(6,4));
     }
 
     static int josephus(int n, int k) {
