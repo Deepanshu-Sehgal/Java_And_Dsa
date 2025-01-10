@@ -3,7 +3,6 @@ package data_structure_and_algorithm.Recursion;
 public class PalindromeString {
     public static void main(String[] args) {
         System.out.println(isPalindrome("racecar"));
-
     }
 
     static boolean isPalindrome(String s) {
