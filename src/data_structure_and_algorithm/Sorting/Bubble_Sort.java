@@ -52,7 +52,7 @@ public class Bubble_Sort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {4,5,1,3,2};
+        int[] arr = {4, 5, 1, 3, 2};
         printArr("Before", arr);
         bubbleSort(arr);
         printArr("After", arr);

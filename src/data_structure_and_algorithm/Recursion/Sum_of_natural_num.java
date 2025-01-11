@@ -6,12 +6,13 @@ public class Sum_of_natural_num {
         System.out.println(calSum(5));
 
     }
-    static int calSum(int n){
 
-        if (n==1){
+    static int calSum(int n) {
+
+        if (n == 1) {
             return 1;
         }
-        int snm1 = calSum(n-1);
+        int snm1 = calSum(n - 1);
         return n + snm1;
     }
 }

@@ -9,6 +9,6 @@ public class Clear_range_of_bits {
     }
 
     public static void main(String[] args) {
-        System.out.println(clearRangeOfBits(10,2,4));
+        System.out.println(clearRangeOfBits(10, 2, 4));
     }
 }

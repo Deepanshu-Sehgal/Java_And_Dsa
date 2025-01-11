@@ -9,22 +9,23 @@ public class Super_keyword {
     }
 }
 
-class Animal5{
-    Animal5(){
+class Animal5 {
+    Animal5() {
         System.out.println("animal constructor is called");
     }
 
-    void print(){
+    void print() {
         System.out.println("Animal");
     }
 }
 
-class Horse extends Animal5{
-    Horse(){
+class Horse extends Animal5 {
+    Horse() {
         super();
         System.out.println("Horse constructor is called");
     }
-    void print(){
+
+    void print() {
         System.out.println("Horse");
     }
 }

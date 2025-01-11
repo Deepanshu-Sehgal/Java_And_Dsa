@@ -13,12 +13,12 @@ public class Find_Permutations {
             char current = str.charAt(i);
             //"abcde" => "ab" + "de" = "abde
             String newStr = str.substring(0, i) + str.substring(i + 1);
-            findPermutations(newStr,ans+current);
+            findPermutations(newStr, ans + current);
         }
     }
 
     public static void main(String[] args) {
         String str = "abc";
-        findPermutations(str,"");
+        findPermutations(str, "");
     }
 }

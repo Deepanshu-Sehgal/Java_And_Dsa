@@ -31,7 +31,7 @@ public class FourArray {
         }
 
         for (int i = 0; i < leftMax.length; i++) {
-            System.out.print(rightMax[i]+" ");
+            System.out.print(rightMax[i] + " ");
         }
         System.out.println();
 

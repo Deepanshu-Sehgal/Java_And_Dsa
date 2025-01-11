@@ -9,7 +9,7 @@ public class QuickSortPractice {
         printArray(arr);
     }
 
-    static void QuickSort(int arr[], int si, int ei) {
+    static void QuickSort(int[] arr, int si, int ei) {
         if (si >= ei)
             return;
 
@@ -18,7 +18,7 @@ public class QuickSortPractice {
         QuickSort(arr, pidx + 1, ei);
     }
 
-    static int partitionNew(int arr[], int si, int ei) {
+    static int partitionNew(int[] arr, int si, int ei) {
         int pivot = arr[ei];
         int i = si - 1;
 

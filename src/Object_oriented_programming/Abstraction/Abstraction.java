@@ -44,6 +44,7 @@ class Chicken extends Animal {
     void changeColor() {
         color = "Yellow";
     }
+
     void walk() {
         System.out.println("Walks on 2 legs");
     }

@@ -3,10 +3,10 @@ package Object_oriented_programming.Interface;
 public class Nested_Static_class {
     public static void main(String[] args) {
         Student student1 = new Student();
-        student1.schoolName = "Dav";
+        Student.schoolName = "Dav";
 
         Student student2 = new Student();
-        System.out.println(student2.schoolName);
+        System.out.println(Student.schoolName);
 
     }
 }

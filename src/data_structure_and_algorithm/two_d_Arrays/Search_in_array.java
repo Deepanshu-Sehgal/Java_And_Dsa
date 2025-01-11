@@ -3,13 +3,13 @@ package data_structure_and_algorithm.two_d_Arrays;
 import java.util.Scanner;
 
 public class Search_in_array {
-    public static boolean Search(int[][] matrix,int key){
+    public static boolean Search(int[][] matrix, int key) {
         for (int row = 0; row < matrix.length; row++) {
             for (int col = 0; col < matrix[0].length; col++) {
-               if (matrix[row][col] == key){
-                   System.out.println("Found at cell ( " + row +" , " +col+" )");
-                   return true;
-               }
+                if (matrix[row][col] == key) {
+                    System.out.println("Found at cell ( " + row + " , " + col + " )");
+                    return true;
+                }
             }
         }
         return false;
@@ -32,11 +32,11 @@ public class Search_in_array {
         //output of 2D array
         for (int row = 0; row < n; row++) {
             for (int col = 0; col < m; col++) {
-                System.out.print(matrix[row][col]+ " ");
+                System.out.print(matrix[row][col] + " ");
             }
             System.out.println();
         }
-        Search(matrix,5);
+        Search(matrix, 5);
 
 
     }

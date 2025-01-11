@@ -10,6 +10,6 @@ public class LengthOfString {
         if (str.length() == 0)
             return 0;
 
-        return lengthString(str.substring(1)) +1;
+        return lengthString(str.substring(1)) + 1;
     }
 }

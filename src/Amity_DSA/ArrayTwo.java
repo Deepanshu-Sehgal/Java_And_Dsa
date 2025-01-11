@@ -1,6 +1,7 @@
 package Amity_DSA;
 
 import java.util.Scanner;
+
 public class ArrayTwo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -12,7 +13,7 @@ public class ArrayTwo {
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                System.out.println("enter " + (i+1) + " of " + (j+1) + " element");
+                System.out.println("enter " + (i + 1) + " of " + (j + 1) + " element");
                 arr[i][j] = sc.nextInt();
             }
         }
@@ -23,7 +24,6 @@ public class ArrayTwo {
             }
             System.out.println();
         }
-
 
 
     }

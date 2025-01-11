@@ -12,15 +12,15 @@ public class TillingProblem {
 
     public static int totalTiles(int n) { // 2 x n (floor size)
 
-        if (n==0 || n==1)
+        if (n == 0 || n == 1)
             return 1;
 
         //kaam
         //vertical choice
-        int verticalTiles = totalTiles(n-1);  //function n - 1
+        int verticalTiles = totalTiles(n - 1);  //function n - 1
 
         //horizontal choice
-        int horizontalTiles = totalTiles(n-2); //function n - 2
+        int horizontalTiles = totalTiles(n - 2); //function n - 2
 
         return verticalTiles + horizontalTiles;
 

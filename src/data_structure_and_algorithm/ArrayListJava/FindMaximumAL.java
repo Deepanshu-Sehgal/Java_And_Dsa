@@ -17,7 +17,7 @@ public class FindMaximumAL {
         for (int i = 0; i < list.size() - 1; i++) {
 //           if (max < list.get(i))
 //                max = list.get(i);
-            max = Math.max(max,list.get(i));
+            max = Math.max(max, list.get(i));
         }
         System.out.println("Max Element: " + max);
     }

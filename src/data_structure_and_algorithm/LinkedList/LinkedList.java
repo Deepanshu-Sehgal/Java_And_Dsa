@@ -141,11 +141,11 @@ public class LinkedList {
         return helper(head, key);
     }
 
-    public void reverse(){
+    public void reverse() {
         Node prev = null;
         Node curr = tail = head;
         Node next;
-        while(curr!= null){
+        while (curr != null) {
             next = curr.next;
             curr.next = prev;
             prev = curr;
@@ -155,30 +155,29 @@ public class LinkedList {
 
     }
 
-    public void deleteNthFromEnd(int n){
+    public void deleteNthFromEnd(int n) {
         //calculate size
         int size = 0;
         Node temp = head;
-        while(temp!=null){
+        while (temp != null) {
             temp = temp.next;
             size++;
         }
 
-        if(n == size){
+        if (n == size) {
             head = head.next; //remove First Operation
             return;
         }
 
         //size -n
         int i = 1;
-        int iToFind = size-n;
+        int iToFind = size - n;
         Node prev = head;
-        while (i<iToFind){
+        while (i < iToFind) {
             prev = prev.next;
             i++;
         }
         prev.next = prev.next.next;
-        return;
     }
 
     public static void main(String[] args) {
@@ -208,7 +207,7 @@ public class LinkedList {
         ll.addFirst(1);
         ll.addLast(4);
         ll.addLast(5);
-        ll.add(2,5);
+        ll.add(2, 5);
         ll.print();
         ll.reverse();
         ll.print();

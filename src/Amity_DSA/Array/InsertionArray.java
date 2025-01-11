@@ -13,11 +13,11 @@ public class InsertionArray {
     }
 
     // Function to insert x in arr at position pos
-    public static int[] insertX(int n, int arr[], int x, int pos) {
+    public static int[] insertX(int n, int[] arr, int x, int pos) {
         int i;
 
         // create a new array of size n+1
-        int newarr[] = new int[n + 1];
+        int[] newarr = new int[n + 1];
 
         // insert the elements from
         // the old array into the new array

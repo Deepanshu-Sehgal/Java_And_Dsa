@@ -4,17 +4,17 @@ package data_structure_and_algorithm.Recursion;
 public class Duplicate_Strings {
     public static void main(String[] args) {
         String str = "deepanshu";
-        removeDuplicate(str,0,new StringBuilder(""),new boolean[26]);
+        removeDuplicate(str, 0, new StringBuilder(), new boolean[26]);
     }
 
-    public static void removeDuplicate(String str, int index, StringBuilder newStr, boolean map[]) {
+    public static void removeDuplicate(String str, int index, StringBuilder newStr, boolean[] map) {
         if (index == str.length()) { //base case
             System.out.println(newStr);
             return;
         }
         //kaam
         char currChar = str.charAt(index);
-        if (map[currChar - 'a'] == true) {
+        if (map[currChar - 'a']) {
             //dubpicates
             removeDuplicate(str, index + 1, newStr, map);
         } else {

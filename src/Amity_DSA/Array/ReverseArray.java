@@ -3,8 +3,7 @@ package Amity_DSA.Array;
 public class ReverseArray {
     // function that reverses array and stores it
     // in another array
-    static void reverse(int[] a, int n)
-    {
+    static void reverse(int[] a, int n) {
         int[] b = new int[n];
         int j = n;
         for (int i = 0; i < n; i++) {
@@ -19,9 +18,8 @@ public class ReverseArray {
         }
     }
 
-    public static void main(String[] args)
-    {
-        int [] arr = {10, 20, 30, 40, 50};
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
         reverse(arr, arr.length);
     }
 }

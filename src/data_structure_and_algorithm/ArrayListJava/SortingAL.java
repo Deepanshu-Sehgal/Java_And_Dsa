@@ -1,7 +1,6 @@
 package data_structure_and_algorithm.ArrayListJava;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class SortingAL {
@@ -15,7 +14,7 @@ public class SortingAL {
 
         Collections.sort(list);//ascending order
         System.out.println(list);
-        Collections.sort(list,Collections.reverseOrder()); // descending order
+        Collections.sort(list, Collections.reverseOrder()); // descending order
         System.out.println(list);
     }
 }

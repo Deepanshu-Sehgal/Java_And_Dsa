@@ -3,7 +3,7 @@ package java_programming_language.conditional_statements.switch_statements;
 public class week_names {
     public static void main(String[] args) {
         int day = 1;
-        switch (day){
+        switch (day) {
             case 1 -> System.out.println("Sunday");
             case 2 -> System.out.println("Monday");
             case 3 -> System.out.println("Tuesday");

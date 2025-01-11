@@ -31,6 +31,6 @@ public class Staircase_Search {
                 {32, 33, 39, 50}
         };
         int key = 33;
-        staircaseSearch(matrix,key);
+        staircaseSearch(matrix, key);
     }
 }

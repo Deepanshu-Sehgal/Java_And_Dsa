@@ -3,7 +3,7 @@ package Amity_DSA.Sorting;
 import java.util.Scanner;
 
 class sort2 {
-    int n[] = new int[10];
+    int[] n = new int[10];
     int i = 0, j = 9;
     Scanner sc = new Scanner(System.in);
 

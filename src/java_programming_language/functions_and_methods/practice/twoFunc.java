@@ -5,7 +5,7 @@ public class twoFunc {
         System.out.println(isEven(2));
     }
 
-    public static boolean isEven(int a){
+    public static boolean isEven(int a) {
         return a % 2 == 0;
     }
 }

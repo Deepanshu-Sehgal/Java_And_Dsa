@@ -9,13 +9,13 @@ public class Method_overriding {
     }
 }
 
-class Janwar{
-    void eat(){
+class Janwar {
+    void eat() {
         System.out.println("Eats anything");
     }
 }
 
-class Dear extends Janwar{
+class Dear extends Janwar {
     @Override
     void eat() {
         System.out.println("Eats grass");

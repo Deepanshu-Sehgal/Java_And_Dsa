@@ -3,7 +3,7 @@ package java_programming_language.Strings;
 public class UpperCase {
 
     public static String toUpperCase(String str) {
-        StringBuilder sb = new StringBuilder("");
+        StringBuilder sb = new StringBuilder();
         char ch = Character.toUpperCase(str.charAt(0));
         sb.append(ch);
 

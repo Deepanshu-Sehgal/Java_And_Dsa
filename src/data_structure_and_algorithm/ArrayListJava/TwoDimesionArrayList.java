@@ -27,9 +27,9 @@ public class TwoDimesionArrayList {
 //        list3.add(15);
 
         for (int i = 1; i <= 5; i++) {
-            list1.add(i*2);
-            list2.add(i*3);
-            list3.add(i*5);
+            list1.add(i * 2);
+            list2.add(i * 3);
+            list3.add(i * 5);
         }
         mainList.add(list1);
         mainList.add(list2);

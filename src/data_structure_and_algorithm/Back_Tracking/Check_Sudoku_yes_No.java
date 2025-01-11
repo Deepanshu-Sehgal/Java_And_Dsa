@@ -2,7 +2,7 @@ package data_structure_and_algorithm.Back_Tracking;
 
 public class Check_Sudoku_yes_No {
 
-    public static boolean isSafeSudoku(int sudoku[][], int row, int col, int digit) {
+    public static boolean isSafeSudoku(int[][] sudoku, int row, int col, int digit) {
 
         //columns
         for (int i = 0; i <= 8; i++) {
@@ -19,7 +19,7 @@ public class Check_Sudoku_yes_No {
         return true;
     }
 
-    public static boolean sudokuSolver(int sukoku[][], int row, int col) {
+    public static boolean sudokuSolver(int[][] sukoku, int row, int col) {
         //base case
 
         if (row == 9 && col == 9) return true;
@@ -50,7 +50,7 @@ public class Check_Sudoku_yes_No {
     }
 
     public static void main(String[] args) {
-        int sudoku[][] = {{3, 0, 6, 5, 0, 8, 4, 0, 0},
+        int[][] sudoku = {{3, 0, 6, 5, 0, 8, 4, 0, 0},
                 {5, 2, 0, 0, 0, 0, 0, 0, 0},
                 {0, 8, 7, 0, 0, 0, 0, 3, 1},
                 {0, 0, 3, 0, 1, 0, 0, 8, 0},

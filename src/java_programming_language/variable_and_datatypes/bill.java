@@ -13,9 +13,9 @@ public class bill {
         int eraser = sc.nextInt();
 
         int totalAmt = pen + $ + eraser;
-        int gst = (totalAmt * 18 )/ 100;
+        int gst = (totalAmt * 18) / 100;
         System.out.println("Item total Amount = " + totalAmt);
-        System.out.println("GST 18 % = "+gst);
-        System.out.println("Total = "+ (totalAmt + gst));
+        System.out.println("GST 18 % = " + gst);
+        System.out.println("Total = " + (totalAmt + gst));
     }
 }

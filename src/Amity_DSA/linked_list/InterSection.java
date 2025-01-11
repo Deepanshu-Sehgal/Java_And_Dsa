@@ -2,7 +2,7 @@ package Amity_DSA.linked_list;
 
 //To find the intersection point of two linked lists in Java, you can use the following approach. Assuming you have a `Node` class representing the nodes of the linked list, you can create a method that takes two linked lists as parameters and returns the intersection point:
 
-        //```java
+//```java
 class NodeInetr {
     int data;
     NodeInetr next;
@@ -83,4 +83,4 @@ public class InterSection {
 }
 //```
 
-     //   In this example, `findIntersection` is the method that takes two linked lists as parameters and returns the intersection point. The `getLength` method is a helper method to find the length of a linked list. The `main` method demonstrates how to use the `findIntersection` method with an example.
+//   In this example, `findIntersection` is the method that takes two linked lists as parameters and returns the intersection point. The `getLength` method is a helper method to find the length of a linked list. The `main` method demonstrates how to use the `findIntersection` method with an example.

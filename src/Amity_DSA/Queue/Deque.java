@@ -4,7 +4,7 @@ package Amity_DSA.Queue;
 
 class Deque {
     static final int MAX = 100;
-    int arr[];
+    int[] arr;
     int front;
     int rear;
     int size;

@@ -1,7 +1,5 @@
 package data_structure_and_algorithm.Arrays;
 
-import java.lang.reflect.Array;
-
 /*
 Time complexity = O(n)
 */
@@ -48,7 +46,7 @@ public class Trapping_Rainwater {
 
     public static void main(String[] args) {
 
-        int[] height = {4,2,0,3,2,5};
+        int[] height = {4, 2, 0, 3, 2, 5};
 
         System.out.println(trappedRainWater(height));
     }

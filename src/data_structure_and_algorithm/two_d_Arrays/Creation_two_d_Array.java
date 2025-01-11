@@ -22,7 +22,7 @@ public class Creation_two_d_Array {
         //output of 2D array
         for (int row = 0; row < n; row++) {
             for (int col = 0; col < m; col++) {
-                System.out.print(matrix[row][col]+ " ");
+                System.out.print(matrix[row][col] + " ");
             }
             System.out.println();
         }

@@ -9,6 +9,7 @@ public class Multi_level_inheritance {
         dobby.breed = "Pomarian";
     }
 }
+
 class Animals {
     String color;
 
@@ -21,10 +22,10 @@ class Animals {
     }
 }
 
-class Mammal extends Animal{
+class Mammal extends Animal {
     int legs;
 }
 
-class Dogs extends Mammal{
+class Dogs extends Mammal {
     String breed;
 }

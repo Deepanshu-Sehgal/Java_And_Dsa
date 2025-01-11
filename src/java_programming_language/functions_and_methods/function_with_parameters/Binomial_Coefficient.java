@@ -9,6 +9,6 @@ public class Binomial_Coefficient {
     }
 
     public static void main(String[] args) {
-        System.out.println(binomialCoefficient(5,2));
+        System.out.println(binomialCoefficient(5, 2));
     }
 }

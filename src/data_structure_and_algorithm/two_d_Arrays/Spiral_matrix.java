@@ -26,18 +26,18 @@ public class Spiral_matrix {
 
             //bottom
             for (int i = endCol - 1; i >= startCol; i--) {
-                if (startRow == endRow){
+                if (startRow == endRow) {
                     break;
                 }
-                System.out.print(matrix[endRow][i]+ " ");
+                System.out.print(matrix[endRow][i] + " ");
             }
 
             //left
             for (int i = endRow - 1; i >= startRow + 1; i--) {
-                if (startCol == endCol){
+                if (startCol == endCol) {
                     break;
                 }
-                System.out.print(matrix[i][startCol]+ " ");
+                System.out.print(matrix[i][startCol] + " ");
             }
 
             startCol++;

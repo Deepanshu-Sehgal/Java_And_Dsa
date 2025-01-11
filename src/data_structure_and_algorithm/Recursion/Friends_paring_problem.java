@@ -19,7 +19,7 @@ public class Friends_paring_problem {
 
         int single = Pairing(n - 1);
 
-        int pairing = (n-1) * Pairing(n - 2);
+        int pairing = (n - 1) * Pairing(n - 2);
         return single + pairing;
     }
 }

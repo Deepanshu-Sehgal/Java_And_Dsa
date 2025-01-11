@@ -9,7 +9,7 @@ public class MergeSortPractice {
         printArray(arr);
     }
 
-    static void mergeSort(int arr[], int si, int ei) {
+    static void mergeSort(int[] arr, int si, int ei) {
         if (si >= ei) {
             return;
         }
@@ -21,8 +21,8 @@ public class MergeSortPractice {
         mergeBoth(arr, si, mid, ei);
     }
 
-    static void mergeBoth(int arr[], int si, int mid, int ei) {
-        int temp[] = new int[ei - si + 1];
+    static void mergeBoth(int[] arr, int si, int mid, int ei) {
+        int[] temp = new int[ei - si + 1];
         int left = si;
         int right = mid + 1;
         int iterator = 0;
@@ -48,7 +48,7 @@ public class MergeSortPractice {
         }
 
         for (iterator = 0, left = si; iterator < temp.length; iterator++, left++) {
-                arr[left] = temp[iterator];
+            arr[left] = temp[iterator];
         }
 
     }

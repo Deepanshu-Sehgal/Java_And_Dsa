@@ -4,7 +4,7 @@ public class Compare {
     public static void main(String[] args) {
         String s1 = "Deep";
         String s2 = "Deep";
-        String s3 = new String("Deep");
+        String s3 = "Deep";
 
         if (s1 == s2)
             System.out.println("String is same");

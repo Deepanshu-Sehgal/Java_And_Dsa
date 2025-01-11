@@ -1,11 +1,11 @@
 package Amity_DSA.Queue;
 
 public class Circular {
-    private int[] queue;
+    private final int[] queue;
     private int front; // Index of the front element
     private int rear;  // Index of the rear element
     private int size;  // Current size of the queue
-    private int capacity; // Maximum capacity of the queue
+    private final int capacity; // Maximum capacity of the queue
 
     public Circular(int capacity) {
         this.capacity = capacity;

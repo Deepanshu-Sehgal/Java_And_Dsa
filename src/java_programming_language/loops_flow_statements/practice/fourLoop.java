@@ -8,7 +8,7 @@ public class fourLoop {
         System.out.println("Enter number to print table");
         int table = sc.nextInt();
         for (int i = 1; i <= 10; i++) {
-            System.out.println(table + " * " + i +" = " +table*i);
+            System.out.println(table + " * " + i + " = " + table * i);
         }
     }
 }

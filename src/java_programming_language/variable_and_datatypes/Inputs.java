@@ -7,7 +7,7 @@ public class Inputs {
         Scanner scanner = new Scanner(System.in);
         //String inp = scanner.next();
         // String inp1=scanner.nextLine();
-        int num=scanner.nextInt();
+        int num = scanner.nextInt();
         System.out.println(num);
     }
 }

@@ -20,7 +20,7 @@ public class SwapNumbersAL {
 
         int idx1 = 1, idx2 = 3;
         System.out.println(list);
-        swap(list,idx1,idx2);
+        swap(list, idx1, idx2);
         System.out.println(list);
 
     }

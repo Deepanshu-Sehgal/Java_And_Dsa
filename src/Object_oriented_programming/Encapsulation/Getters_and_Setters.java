@@ -26,6 +26,7 @@ class Pen2 {
     int getTip() {
         return this.tip;
     }
+
     void setTip(int newTip) {
         tip = newTip;
     }

@@ -1,9 +1,9 @@
 package Amity_DSA.Stack;
 
 class CustomStack {
-    private int maxSize;
+    private final int maxSize;
     private int top;
-    private int[] stackArray;
+    private final int[] stackArray;
 
     public CustomStack(int size) {
         maxSize = size;

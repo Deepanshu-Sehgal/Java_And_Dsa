@@ -1,7 +1,5 @@
 package java_programming_language.functions_and_methods.function_with_parameters;
 
-import java.util.Scanner;
-
 public class Swap_numbers {
     public static void swap(int a, int b) {
         int temp = a;

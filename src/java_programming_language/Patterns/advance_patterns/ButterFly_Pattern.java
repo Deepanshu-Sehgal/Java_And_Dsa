@@ -25,7 +25,7 @@ public class ButterFly_Pattern {
                 System.out.print("*");
             }
             //spaces - 2*(n-1)
-            for (int j = 1; j <= 2*(n - i); j++) {
+            for (int j = 1; j <= 2 * (n - i); j++) {
                 System.out.print(" ");
             }
             //starts - i

@@ -17,7 +17,7 @@ public class Max_of_Sub_Array {
 
                 }
                 System.out.print("sum -> " + currSum);
-                if (maxSum < currSum){
+                if (maxSum < currSum) {
                     maxSum = currSum;
                 }
                 System.out.println();
@@ -26,6 +26,7 @@ public class Max_of_Sub_Array {
         }
         System.out.println("Max sum of sub array is -> " + maxSum);
     }
+
     public static void main(String[] args) {
         int[] num = {2, 3, 4, 5, 6};
         maxSubArray(num);

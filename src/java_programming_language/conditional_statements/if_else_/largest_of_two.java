@@ -4,10 +4,9 @@ public class largest_of_two {
     public static void main(String[] args) {
         int a = 10;
         int b = 20;
-        if (a>=b){
+        if (a >= b) {
             System.out.println("A is largest of 2");
-        }
-        else {
+        } else {
             System.out.println("B is largest of 2");
         }
     }

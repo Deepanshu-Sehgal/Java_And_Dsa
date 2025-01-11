@@ -13,7 +13,7 @@ public class Print_x_power_n_Oprimized {
         }
 
         int halfPower = OptimizedPower(number, power / 2);
-        int halfPowerSq =  halfPower * halfPower;
+        int halfPowerSq = halfPower * halfPower;
 
         //power is odd
         if (power % 2 != 0) { //power is odd

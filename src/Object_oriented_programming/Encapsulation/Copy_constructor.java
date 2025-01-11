@@ -22,7 +22,7 @@ public class Copy_constructor {
 class Student2 {
     String name;
     int rollNo;
-    int marks[];
+    int[] marks;
 
   /*  //Shallow copy constructor - copy by reference only and changes reflect
     Student2(Student2 s2) {
@@ -36,9 +36,7 @@ class Student2 {
         marks = new int[3];
         this.name = s2.name;
         this.rollNo = s2.rollNo;
-        for (int i = 0; i < marks.length; i++) {
-            this.marks[i] = s2.marks[i];
-        }
+        System.arraycopy(s2.marks, 0, this.marks, 0, marks.length);
     }
 
 

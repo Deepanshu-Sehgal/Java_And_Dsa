@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Input_Output {
     public static void main(String[] args) {
         //create array
-        int marks[] = new int[100];
+        int[] marks = new int[100];
         Scanner sc = new Scanner(System.in);
 
         //array input

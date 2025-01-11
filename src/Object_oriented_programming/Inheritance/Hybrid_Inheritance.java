@@ -23,12 +23,13 @@ class Fish2 extends Animals2 {
 }
 
 class Tuna extends Fish2 {
-    void print(){
+    void print() {
         System.out.println(swim);
     }
 }
+
 class Shark extends Fish2 {
-    void print(){
+    void print() {
         System.out.println(swim);
     }
 }
@@ -41,18 +42,20 @@ class Mammals2 extends Animals2 {
     String walk;
 }
 
-class Dogs1 extends Mammals{
-    void print(){
+class Dogs1 extends Mammals {
+    void print() {
         System.out.println(walk);
     }
 }
-class Cat extends Mammals{
-    void print(){
+
+class Cat extends Mammals {
+    void print() {
         System.out.println(walk);
     }
 }
-class Human extends Mammals{
-    void print(){
+
+class Human extends Mammals {
+    void print() {
         System.out.println(walk);
     }
 }

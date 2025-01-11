@@ -1,6 +1,6 @@
 package Object_oriented_programming.Packages;
 
-import java.util.Scanner; //package when we want to use it we have to import package
+import java.util.Scanner;
 
 public class Inbuilt_packages {
     public static void main(String[] args) {

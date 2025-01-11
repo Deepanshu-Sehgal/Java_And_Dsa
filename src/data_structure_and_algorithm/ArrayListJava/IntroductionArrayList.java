@@ -1,5 +1,6 @@
 package data_structure_and_algorithm.ArrayListJava;
-import java.util.*;
+
+import java.util.ArrayList;
 
 public class IntroductionArrayList {
     public static void main(String[] args) {
