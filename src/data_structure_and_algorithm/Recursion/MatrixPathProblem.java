@@ -2,7 +2,7 @@ package data_structure_and_algorithm.Recursion;
 
 public class MatrixPathProblem {
     public static void main(String[] args) {
-        System.out.println(pathProblem(2,2));
+        System.out.println(pathProblem(2, 2));
     }
 
     static int pathProblem(int row, int column) {

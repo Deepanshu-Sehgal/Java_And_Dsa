@@ -28,7 +28,6 @@ class QueueCls {
     public static void queueDequeue() {
         if (front == rear) {
             System.out.println("Queue is empty");
-            return;
         } else {
             for (int i = 0; i < rear - 1; i++) {
                 queue[i] = queue[i + 1];
