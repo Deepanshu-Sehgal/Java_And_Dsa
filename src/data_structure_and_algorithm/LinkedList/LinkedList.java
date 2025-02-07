@@ -1,7 +1,7 @@
 package data_structure_and_algorithm.LinkedList;
 
 public class LinkedList {
-    public static class Node {
+    static class Node {
         int data;
         Node next;
 
@@ -11,12 +11,12 @@ public class LinkedList {
         }
     }
 
-    public static Node head;
-    public static Node tail;
-    public static int size;
+    static Node head;
+    static Node tail;
+    static int size;
 
-    //Meathods
-    public void addFirst(int data) {
+    //Methods
+    void addFirst(int data) {
         //step 1 - create new node
         Node newNode = new Node(data);
         size++;
@@ -33,7 +33,7 @@ public class LinkedList {
 
     }
 
-    public void addLast(int data) {
+    void addLast(int data) {
         //step 1 - create new node
         Node newNode = new Node(data);
         size++;
@@ -49,7 +49,7 @@ public class LinkedList {
         tail = newNode;
     }
 
-    public void print() {
+    void print() {
         if (head == null) {
             System.out.println("LL is empty");
             return;
@@ -62,11 +62,12 @@ public class LinkedList {
         System.out.println("null");
     }
 
-    public void add(int index, int data) {
+    void add(int index, int data) {
         if (index == 0) {
             addFirst(data);
             return;
         }
+
         Node newNode = new Node(data);
         size++;
         Node temp = head;
@@ -82,7 +83,7 @@ public class LinkedList {
 
     }
 
-    public void removeFirst() {
+    void removeFirst() {
         if (size == 0) {
             System.out.println("ll is empty");
         } else if (size == 1) {
@@ -95,7 +96,7 @@ public class LinkedList {
 
     }
 
-    public void removeLast() {
+    void removeLast() {
         if (size == 0) {
             System.out.println("ll is empty");
         } else if (size == 1) {
@@ -113,7 +114,7 @@ public class LinkedList {
 
     }
 
-    public int itrSearch(int key) {
+    int itrSearch(int key) {
         Node temp = head;
         int i = 0;
         while (temp != null) {
@@ -126,7 +127,7 @@ public class LinkedList {
         return -1; // key not found
     }
 
-    public int helper(Node head, int key) {
+    int helper(Node head, int key) {
         if (head == null) return -1;
         if (head.data == key) return 0;
 
@@ -137,11 +138,11 @@ public class LinkedList {
         return idx + 1;
     }
 
-    public int recSearch(int key) {
+    int recSearch(int key) {
         return helper(head, key);
     }
 
-    public void reverse() {
+    void reverse() {
         Node prev = null;
         Node curr = tail = head;
         Node next;
@@ -155,7 +156,7 @@ public class LinkedList {
 
     }
 
-    public void deleteNthFromEnd(int n) {
+    void deleteNthFromEnd(int n) {
         //calculate size
         int size = 0;
         Node temp = head;
