@@ -1,6 +1,6 @@
 package data_structure_and_algorithm.LinkedList;
 
-public class FindMiddelNode {
+public class FindMiddleNode {
     public static void main(String[] args) {
         Node<Integer> head = new Node<>(1);
         Node<Integer> v1 = new Node<>(2);
