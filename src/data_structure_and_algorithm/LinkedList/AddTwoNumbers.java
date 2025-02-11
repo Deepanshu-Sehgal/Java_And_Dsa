@@ -22,7 +22,6 @@ public class AddTwoNumbers {
                 sum += r2.val;
             }
 
-
             int digit = sum % 10;
             carry = sum / 10;
             Node<Integer> newNode = new Node<>(digit);
@@ -32,7 +31,6 @@ public class AddTwoNumbers {
                 temp.next = newNode;
                 temp = newNode;
             }
-
 
         }
         return reverseLinkedList(ans);
