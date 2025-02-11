@@ -30,7 +30,7 @@ public class CheckPalindromeInLl {
         return true;
     }
 
-    static Node<Integer> findMiddle(Node head) {
+    static Node<Integer> findMiddle(Node<Integer> head) {
         Node<Integer> slow = head;
         Node<Integer> fast = head;
 
