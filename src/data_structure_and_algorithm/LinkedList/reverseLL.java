@@ -15,17 +15,29 @@ public class reverseLL {
         v4.next = v5;
 
         LearnLLAnuj.printLL(head);
-        Node<Integer> newNode = reverseLinkedList(head);
-        LearnLLAnuj.printLL(newNode);
+//        Node<Integer> newNode = reverseLinkedList(head);
+        Node<Integer> newNode2 = reverseLLRecursively(head);
+//        LearnLLAnuj.printLL(newNode);
+        LearnLLAnuj.printLL(newNode2);
 
     }
 
-    static Node<Integer> reverseLinkedList(Node<Integer> head){
-        if (head == null || head.next == null)return head;
+    static Node<Integer> reverseLLRecursively(Node<Integer> head) {
+        if (head == null || head.next == null) return head;
+
+        Node<Integer> headOfSubProblem = reverseLLRecursively(head.next);
+        head.next.next = head;
+        head.next = null;
+
+        return headOfSubProblem;
+    }
+
+    static Node<Integer> reverseLinkedList(Node<Integer> head) {
+        if (head == null || head.next == null) return head;
         Node<Integer> prev = head;
         Node<Integer> curr = head.next;
         head.next = null;
-        while (curr != null){
+        while (curr != null) {
             Node<Integer> next = curr.next;
             curr.next = prev;
             prev = curr;
