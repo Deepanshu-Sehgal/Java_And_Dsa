@@ -14,9 +14,6 @@ public class CheckPalindromeInLl {
         v3.next = v4;
         v4.next = v5;
         System.out.println(isPalindrome(head));
-
-
-
     }
     static boolean isPalindrome(Node<Integer> head){
         Node<Integer> middle = findMiddle(head);
