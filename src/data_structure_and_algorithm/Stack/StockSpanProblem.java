@@ -22,6 +22,7 @@ public class StockSpanProblem {
         for (int i = 1; i < n; i++) {
             while (!stack.isEmpty()) {
                 int top = stack.peek();
+                System.out.println("Top is: "+a[top]);
                 if (a[top] > a[i]) {
                     break;
                 } else stack.pop();
