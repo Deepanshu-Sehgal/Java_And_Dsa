@@ -1,9 +1,9 @@
 package data_structure_and_algorithm.Stack;
 
 public class StackUsingArray {
-    int size;
-    int[] a;
-    int top;
+    private int size;
+    private int[] a;
+    private int top;
 
     public StackUsingArray(int size) {
         this.size = size;
@@ -11,15 +11,15 @@ public class StackUsingArray {
         top = -1;
     }
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return top == -1;
     }
 
-    boolean isFull() {
+    public boolean isFull() {
         return top == size - 1;
     }
 
-    boolean push(int data) {
+    public boolean push(int data) {
         if (isFull()) {
             System.out.println("Stack Over Flow");
             return false;
@@ -30,7 +30,7 @@ public class StackUsingArray {
         }
     }
 
-    int pop(){
+    public int pop(){
         if (isEmpty()){
             System.out.println("Stack is Empty (UnderFlow)");
             return -1;
@@ -40,7 +40,7 @@ public class StackUsingArray {
             return temp;
         }
     }
-    int peek(){
+    public int peek(){
         if (isEmpty()){
             System.out.println("Stack is Empty (UnderFlow)");
             return -1;
@@ -49,7 +49,7 @@ public class StackUsingArray {
         }
     }
 
-    void printStack(){
+    public void printStack(){
         for (int i =0;i<=top;i++){
             System.out.print(a[i]+" ");
         }
