@@ -7,7 +7,7 @@ public class StockSpanProblem {
         int[] a = {100, 80, 60, 70, 60, 75, 85};
         int[] s = stockSpan(a);
         for (int e : s) {
-            System.out.println(e + " ");
+            System.out.print(e + " ");
         }
 
     }
