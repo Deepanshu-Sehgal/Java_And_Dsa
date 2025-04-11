@@ -4,17 +4,17 @@ import java.util.ArrayDeque;
 
 public class StockSpanProblem {
     public static void main(String[] args) {
-        int a[] = {100,80,60,70,60,75,85};
-        int s[] = stockSpan(a);
-        for (int e : s){
-            System.out.println(e+" ");
+        int[] a = {100, 80, 60, 70, 60, 75, 85};
+        int[] s = stockSpan(a);
+        for (int e : s) {
+            System.out.println(e + " ");
         }
 
     }
 
     static int[] stockSpan(int a[]) {
         int n = a.length;
-        int s[] = new int[n];
+        int[] s = new int[n];
 
         s[0] = 1;
         ArrayDeque<Integer> stack = new ArrayDeque<>();
@@ -27,7 +27,7 @@ public class StockSpanProblem {
                 } else stack.pop();
             }
             if (stack.isEmpty()) s[i] = i;
-            else s[i] = i- stack.peek();
+            else s[i] = i - stack.peek();
 
             stack.push(i);
 
