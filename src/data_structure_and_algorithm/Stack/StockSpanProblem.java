@@ -12,7 +12,7 @@ public class StockSpanProblem {
 
     }
 
-    static int[] stockSpan(int a[]) {
+    static int[] stockSpan(int[] a) {
         int n = a.length;
         int[] s = new int[n];
 
