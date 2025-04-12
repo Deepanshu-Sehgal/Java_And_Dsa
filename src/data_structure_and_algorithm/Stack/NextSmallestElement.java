@@ -4,10 +4,10 @@ import java.util.ArrayDeque;
 
 public class NextSmallestElement {
     public static void main(String[] args) {
-        int a[] = {1,6,4,10,2,4};
+        int a[] = {1, 6, 4, 10, 2, 4};
         int ans[] = smallerOnRight(a);
-        for (int e:ans){
-            System.out.print(e+" ");
+        for (int e : ans) {
+            System.out.print(e + " ");
         }
 
     }
@@ -39,7 +39,7 @@ public class NextSmallestElement {
         int ans[] = new int[n];
 
         ArrayDeque<Integer> stack = new ArrayDeque<>();
-        for (int i = n-1; i >= 0; i--) {
+        for (int i = n - 1; i >= 0; i--) {
             while (!stack.isEmpty() && a[stack.peek()] >= a[i]) {
                 stack.pop();
             }
