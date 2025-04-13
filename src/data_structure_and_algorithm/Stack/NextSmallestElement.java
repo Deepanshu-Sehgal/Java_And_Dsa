@@ -6,14 +6,14 @@ import java.util.Arrays;
 public class NextSmallestElement {
     public static void main(String[] args) {
         int a[] = {1, 4, 3, 2, 7, 9, 6, 4};
-        int ans[] = manMinArray(a);
+        int ans[] = manMinWindowsArray(a);
         for (int e : ans) {
             System.out.print(e + " ");
         }
 
     }
 
-    static int[] manMinArray(int a[]) {
+    static int[] manMinWindowsArray(int a[]) {
         int n = a.length;
         int left[] = smallerOnLeft(a);
         int right[] = smallerOnRight(a);
