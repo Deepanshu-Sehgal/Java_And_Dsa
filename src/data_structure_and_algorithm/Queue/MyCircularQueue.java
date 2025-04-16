@@ -17,7 +17,7 @@ public class MyCircularQueue {
 
     public boolean isFull() {
         if (rear == size - 1 && front == 0) return true;
-        if (front + 1 == rear) return true;
+        if (rear + 1 == front) return true;
         return false;
     }
 
@@ -66,11 +66,11 @@ public class MyCircularQueue {
             }
 
         } else {
-            for (int i = front; i <= size; i++) {
-                System.out.print(a[i]);
+            for (int i = front; i < size; i++) {
+                System.out.print(a[i]+" ");
             }
             for (int i = 0; i <= rear; i++) {
-                System.out.print(a[i]);
+                System.out.print(a[i]+" ");
             }
         }
         System.out.println();
