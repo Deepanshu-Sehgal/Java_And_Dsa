@@ -17,16 +17,16 @@ public class MainClassQueue {
 //        queue.enqueue(90);
 //        queue.printQueue();
 
-        QueueUsingTwoStacks qTwoStacks = new QueueUsingTwoStacks();
-        qTwoStacks.enqueue(10);
-        qTwoStacks.enqueue(20);
-        qTwoStacks.enqueue(30);
-        qTwoStacks.enqueue(40);
-        System.out.println(qTwoStacks.dequeue());
-        System.out.println(qTwoStacks.dequeue());
-        System.out.println(qTwoStacks.dequeue());
-        System.out.println(qTwoStacks.dequeue());
-        System.out.println(qTwoStacks.dequeue());
+        QueueUsingOneStack qOneStacks = new QueueUsingOneStack();
+        qOneStacks.enqueue(10);
+        qOneStacks.enqueue(20);
+        qOneStacks.enqueue(30);
+        qOneStacks.enqueue(40);
+        System.out.println(qOneStacks.dequeue());
+        System.out.println(qOneStacks.dequeue());
+        System.out.println(qOneStacks.dequeue());
+        System.out.println(qOneStacks.dequeue());
+        System.out.println(qOneStacks.dequeue());
 
     }
 }
