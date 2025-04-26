@@ -17,16 +17,29 @@ public class MainClassQueue {
 //        queue.enqueue(90);
 //        queue.printQueue();
 
-        QueueUsingOneStack qOneStacks = new QueueUsingOneStack();
-        qOneStacks.enqueue(10);
-        qOneStacks.enqueue(20);
-        qOneStacks.enqueue(30);
-        qOneStacks.enqueue(40);
-        System.out.println(qOneStacks.dequeue());
-        System.out.println(qOneStacks.dequeue());
-        System.out.println(qOneStacks.dequeue());
-        System.out.println(qOneStacks.dequeue());
-        System.out.println(qOneStacks.dequeue());
+//        QueueUsingOneStack qOneStacks = new QueueUsingOneStack();
+//        qOneStacks.enqueue(10);
+//        qOneStacks.enqueue(20);
+//        qOneStacks.enqueue(30);
+//        qOneStacks.enqueue(40);
+//        System.out.println(qOneStacks.dequeue());
+//        System.out.println(qOneStacks.dequeue());
+//        System.out.println(qOneStacks.dequeue());
+//        System.out.println(qOneStacks.dequeue());
+//        System.out.println(qOneStacks.dequeue());
+
+        StackUsingOneQueue stack = new StackUsingOneQueue();
+        stack.push(10);
+        stack.push(20);
+        System.out.println(stack.pop());
+        stack.push(30);
+        System.out.println(stack.pop());
+        stack.push(40);
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+
+
 
     }
 }
